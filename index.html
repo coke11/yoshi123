@@ -3,16 +3,29 @@
 <title>Yoshi 123 - Home</title>
 </head>
 <body>
+<script>
+  function colorChange(color){
+    document.getElementById("hiddenText").style.display = "inline";
+    document.getElementById("hiddenText").style.color = color;
+  }
+</script>
 <h3>Welcome to the offical website for Yoshi 123! On this offical website, you will find many things. Inculding videos, information about the channel, and much, much more!</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bazrPfAXXXA" frameborder="0" allowfullscreen></iframe>
 
 <h2>3 Latest Videos</h2>:
-I am making a clash royale tournament! - <iframe width="280" height="200" src="https://www.youtube.com/embed/smUHyahZOhg" frameborder="0" allowfullscreen></iframe> <br> 
-My top 5 favorite adult swim shows - <iframe width="280" height="200" src="https://www.youtube.com/embed/fm6cy_6DvOk" frameborder="0" allowfullscreen></iframe> <br>
-Blindfold shooting challenge part 1 - <iframe width="280" height="200" src="https://www.youtube.com/embed/Cur54deIuGQ" frameborder="0" allowfullscreen></iframe>
-<p style="color: blue">Question of the day! <br> What is you're favriote color? (Mine is blue!)</p>
+<table>
+  <tbody>
+    <!-- This looks like a table-- but without a border it just ligns everything up -->
+<tr><td>I am making a clash royale tournament! - </td><td><iframe width="280" height="200" src="https://www.youtube.com/embed/smUHyahZOhg" frameborder="0" allowfullscreen></iframe></td></tr> 
+<tr><td>My top 5 favorite adult swim shows - </td><td><iframe width="280" height="200" src="https://www.youtube.com/embed/fm6cy_6DvOk" frameborder="0" allowfullscreen></iframe></td></tr>
+<tr><td>Blindfold shooting challenge part 1 - </td><td><iframe width="280" height="200" src="https://www.youtube.com/embed/Cur54deIuGQ" frameborder="0" allowfullscreen></iframe></td></tr>
+</tbody>
+</table>
+<fieldset style="color: blue"><legend>Question of the day!</legend>What is you're favriote color? (Mine is blue!) <input type="color" value="#0000ff" onchange="colorChange(this.value);" /> <span id="hiddenText" style="display:none;">I like that color :)</span></fieldset>
 
 This code is open source!</font> See a problem or want to help? You can do so on the <a href="https://github.com/coke11/yoshi123"
 </a> github page </a>
 :) | (c) 2016 Yoshi 123
+
+</body>
 </html>
